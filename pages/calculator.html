@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>West Trans UA - калькулятор</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+
+<body>
+    <header class="header-mobile">
+        <nav class="nav navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-header">
+                <div id="navbar-content" class="d-flex">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/Header/logo.webp" alt="logo"></a>
+
+                    <div class="navbar-collapse collapse-menu">
+                        <div class="navbar-collapse-menu">
+                            <div id="navbar-navs-1">
+                                <ul id="navbar-nav-1" class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../index.html#">На головну</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="nav-link-application" class="nav-link" href="#">Калькулятор</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a id="nav-link-contacts" class="nav-link" href="#">Контактні дані</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="vacancies.html">Вакансії</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-center dropdown nav-us-btn-mobile">
+                                    <button id="nav-us-btn" type="button" class="btn btn-primary contact-us-btn">Зв'язатися з нами</button>
+                                    <ul id="nav-dropdown-menu" class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="https://t.me/west_trans_ua" target="_blank">Поставити запитання у Telegram</a></li>
+                                        <li><a class="dropdown-item email" href="mailto:westtransualogistics@gmail.com" target="_blank">Написати на Email</a></li>
+                                        <li class="calling-phone"><a class="dropdown-item" href="#contacts">Зателефонувати</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="navbar-nav-blocks" class="d-flex justify-content-end">
+                            <ul id="navbar-nav-2" class="navbar-nav">
+                                <li id="instagram-header" class="nav-item">
+                                    <a target="_blank" href="https://instagram.com/westtransua?igshid=YmMyMTA2M2Y=" class="nav-link">
+                                        <div id="instagram-header-img"></div>
+                                    </a>
+                                </li>
+                                <li id="facebook-header" class="nav-item">
+                                    <a target="_blank" class="nav-link" href="https://www.facebook.com/profile.php?id=100087898928509">
+                                        <div id="facebook-header-img"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul id="navbar-nav-3" class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle UA" id="nav-language">UA</a>
+                                    <ul id="list-ua" class="dropdown-menu">
+                                        <li><a class="dropdown-item" id="language-calc">EN</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="header-mobile-btn-container" class="">
+                            <a href="#!" id="header-mobile-btn" class="header-mobile-btn">
+                                <span class="menu-open"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-calculator">
+        <section id="application" class="application calc">
+            <div class="container-main">
+                <div id="application-head-calculator" class="text-center">
+                    <h3 class="h3-west-trans">Розрахувати вартість маршруту</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-1024-6 col-sm-12 mb-4">
+                        <div class="d-flex flex-column column-calc">
+                            <div>
+                                <label for="calcExampleFormControlInput1" class="form-label me-1">Довжина маршруту</label>
+                                <p class="form-label-p-text">км</p>
+                            </div>
+                            <input type="number" class="form-control" id="calcExampleFormControlInput1" value="300" min="0">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-1024-6 col-sm-12 mb-4">
+                        <div class="d-flex flex-column column-calc">
+                            <div>
+                                <label for="calcExampleFormControlInput2" class="form-label me-1">Витрати палива</label>
+                                <p class="form-label-p-text">л/100км</p>
+                            </div>
+                            <input type="number" class="form-control" id="calcExampleFormControlInput2" value="50" min="0">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-1024-6 col-sm-12 mb-4">
+                        <div class="d-flex flex-column column-calc">
+                            <div>
+                                <label for="calcExampleFormControlInput3" class="form-label me-1">Актуальна ціна за 1л в грн</label>
+                                <p class="form-label-p-text">(дизель)</p>
+                            </div>
+                            <input type="text" class="form-control" id="calcExampleFormControlInput3" value="50" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-1024-6 col-sm-12 mb-4">
+                        <div class="d-flex flex-column column-calc">
+                            <div>
+                                <label for="calcExampleFormControlInput4" class="form-label me-1">Витрати за весь маршрут</label>
+                                <p class="form-label-p-text">грн</p>
+                            </div>
+                            <input type="number" class="form-control" id="calcExampleFormControlInput4" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-1024-6 col-sm-12 mb-4">
+                        <div class="d-flex flex-column column-calc">
+                            <div>
+                                <label for="calcExampleFormControlInput5" class="form-label me-1">Витрати без урахування витрат на паливо</label>
+                                <p class="form-label-p-text">грн</p>
+                            </div>
+                            <input type="number" class="form-control" id="calcExampleFormControlInput5" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-1024-6 col-sm-12 mb-4">
+                        <div class="d-flex flex-column column-calc">
+                            <div>
+                                <label for="calcExampleFormControlInput6" class="form-label me-1">Витрати за 1 км</label>
+                                <p class="form-label-p-text">грн</p>
+                            </div>
+                            <input type="number" class="form-control" id="calcExampleFormControlInput6" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-1024-6 col-sm-12 mb-4">
+                        <div class="d-flex flex-column column-calc">
+                            <div>
+                                <label for="calcExampleFormControlInput7" class="form-label me-1">Актуальний курс євро в грн</label>
+                                <p class="form-label-p-text">(значення в грн)</p>
+                            </div>
+                            <input type="number" class="form-control" id="calcExampleFormControlInput7" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container-main">
+                <div id="contacts-heading" class="text-center">
+                    <h3 class="h3-west-trans">Наші контакти</h3>
+                </div>
+                <div id="contacts-content" class="d-flex flex-wrap">
+                    <div id="contacts-contact-block-1" class="d-flex">
+                        <div id="logistic-department">
+                            <p class="contacts-p">Логістичний відділ</p>
+                            <a target="_blank" href="tel:+38-097-499-33-72" class="contacts-p link" style="font-weight: 700; margin: 0;">+380 (97) 499 33 72</a>
+                        </div>
+                        <div id="contacts-instagram" class="contacts-img">
+                            <a target="_blank" href="https://instagram.com/westtransua?igshid=YmMyMTA2M2Y=" style="width: inherit; height: inherit;">
+                                <div id="contacts-img-instagram"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="contacts-contact-block-2" class="d-flex">
+                        <div class="contacts-img">
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100087898928509" style="width: inherit; height: inherit;">
+                                <div id="contacts-img-facebook"></div>
+                            </a>
+                        </div>
+                        <div>
+                            <p class="contacts-p">E-mail</p>
+                            <a target="_blank" href="mailto:westtransualogistics@gmail.com" class="contacts-p link" style="font-weight: 700; margin: 0;">westtransualogistics@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center">
+            <p id="footer-text">© 2022</p>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script src="../js/main.js"></script>
+   
+</body>
+
+</html>
